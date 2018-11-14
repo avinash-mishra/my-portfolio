@@ -4,13 +4,15 @@
   "description": "My portfolio. ",
   "author": "avinash.mishra.cat@gmail.com",
   "private": true,
+  "homepage": "https://avinash-mishra.github.io/my-portfolio",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
