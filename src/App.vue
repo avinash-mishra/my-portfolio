@@ -329,13 +329,12 @@ export default {
           keyResponsibilities: [
             {role: 'Provide Data Science solutions for CPG and retail clients.'},
             {role: 'Projects : ' +
-                '- forecasting, ' +
-                '- Churn analysis, ' +
+                'TimeSeries forecasting, ' +
+                'Churn analysis, ' +
                 'segmentation, ' +
                 'likely buyer, ' +
-                'Learning to Rank' +
                 'Prod2Vec at basket level, ' +
-                'Offer reRanking etc.'
+                'Learning to reRank Offers etc.'
             },
             {role: 'Machine learning pipeline'},
             {role: 'Dashboard building'},
