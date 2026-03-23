@@ -187,12 +187,28 @@
             <h2 class="section__title">Awards &amp; <span class="text-gradient">Achievements</span></h2>
           </div>
           <div class="awards__grid">
-            <div class="award-card" v-for="a in awardsList" :key="a.title" :class="'award-card--' + a.tier">
-              <div class="award-card__emoji">{{ a.emoji }}</div>
-              <h4 class="award-card__title">{{ a.title }}</h4>
-              <p class="award-card__desc">{{ a.desc }}</p>
-              <span class="award-card__year">{{ a.year }}</span>
-            </div>
+            <a
+              class="award-card"
+              v-for="a in awardsList"
+              :key="a.title"
+              :class="'award-card--' + a.tier"
+              :href="a.linkedinUrl || '#awards'"
+              :target="a.linkedinUrl ? '_blank' : '_self'"
+              :rel="a.linkedinUrl ? 'noopener noreferrer' : ''"
+            >
+              <div class="award-card__media">
+                <img v-if="a.img" :src="a.img" :alt="a.title" class="award-card__img" />
+                <div v-else class="award-card__emoji">{{ a.emoji }}</div>
+              </div>
+              <div class="award-card__body">
+                <h4 class="award-card__title">{{ a.title }}</h4>
+                <p class="award-card__desc">{{ a.desc }}</p>
+                <div class="award-card__footer">
+                  <span class="award-card__year">{{ a.year }}</span>
+                  <span v-if="a.linkedinUrl" class="award-card__li"><i class="fa fa-linkedin"></i></span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -233,9 +249,6 @@
           <div class="footer__links">
             <a href="mailto:avinash.mishra.2388@gmail.com" class="footer__link">
               <i class="fa fa-envelope"></i> avinash.mishra.2388@gmail.com
-            </a>
-            <a href="tel:+917909409790" class="footer__link">
-              <i class="fa fa-phone"></i> +91 7909 409 790
             </a>
             <a href="https://www.linkedin.com/in/avinash-mishra-a0846360/" target="_blank" class="footer__link">
               <i class="fa fa-linkedin"></i> LinkedIn
@@ -495,70 +508,90 @@ export default {
           tier: 'gold',
           title: 'ETHR Award 2025',
           desc: 'Best Advance in Generative AI Solutions for askSBI chatbot — India\'s first enterprise-scale AI Agent serving 250K users.',
-          year: '2025'
+          year: '2025',
+          img: null,
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
           emoji: '🥇',
           tier: 'gold',
           title: 'BFSI Exceller Award 2025',
           desc: 'For building a Generative AI model in hybrid cloud architecture at State Bank of India.',
-          year: '2025'
+          year: '2025',
+          img: require('./assets/awards/etbfsi-exceller-2025.jpg'),
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
           emoji: '📜',
           tier: 'blue',
           title: 'Oracle Certified GenAI Professional',
           desc: 'Official Oracle certification in Generative AI and large language model technologies.',
-          year: '2024'
+          year: '2024',
+          img: require('./assets/awards/oracle-genai-badge.png'),
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/certifications/'
         },
         {
           emoji: '⭐',
           tier: 'silver',
           title: 'Excellence Certificate — askSBI',
           desc: 'Certificate of Excellence for building the first enterprise-scale AI Agent at State Bank of India.',
-          year: '2023'
+          year: '2023',
+          img: null,
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
           emoji: '🏛️',
           tier: 'blue',
           title: 'IIT-Bombay Technical Committee',
           desc: 'Technical Committee member to establish the SBI Foundation Hub for Data Science & Analytics with IIT-Bombay.',
-          year: '2023'
+          year: '2023',
+          img: null,
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/'
         },
         {
           emoji: '💪',
           tier: 'silver',
           title: 'Hacktoberfest 2019 Winner',
           desc: 'Winner among 154,466 global participants in DigitalOcean\'s Hacktoberfest open-source competition.',
-          year: '2019'
+          year: '2019',
+          img: null,
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
           emoji: '🧡',
           tier: 'blue',
           title: 'StackOverflow Champion',
           desc: '4 Gold · 30 Silver · 44 Bronze medals. Top contributor in Data Science, ML, and Python communities.',
-          year: 'Ongoing'
+          year: 'Ongoing',
+          img: null,
+          linkedinUrl: 'https://stackoverflow.com/users/story/current'
         },
         {
           emoji: '🎤',
           tier: 'silver',
           title: 'International Conference Speaker',
           desc: 'Speaker at International Star-Conference on "Neural network approaches for recommendation engines". Multiple SBI Global IT Centre Tech Talks.',
-          year: 'Multiple'
+          year: 'Multiple',
+          img: null,
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
           emoji: '📰',
           tier: 'blue',
           title: 'SBI Analytics Journal Award',
           desc: 'Recognized multiple times for distilling complex data insights into clear, actionable presentations for non-technical stakeholders.',
-          year: 'Multiple'
+          year: 'Multiple',
+          img: null,
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
           emoji: '🌟',
           tier: 'gold',
           title: '15+ SBI Senior Recognitions',
           desc: 'Awards from 2 Deputy Managing Directors, 2 Chief General Managers, 1 GM, 3 DGMs, and 8 AGMs for AI/DS excellence.',
-          year: '2021–2025'
+          year: '2021–2025',
+          img: null,
+          linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         }
       ],
       education: [
@@ -1443,22 +1476,22 @@ main { position: relative; z-index: 1; }
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem 1.25rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
   transition: var(--transition);
   backdrop-filter: blur(8px);
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 .award-card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
+  z-index: 1;
 }
 .award-card--gold::before { background: var(--gradient-gold); }
 .award-card--silver::before { background: linear-gradient(90deg, #c0c0c0, #a8a8a8); }
@@ -1470,7 +1503,39 @@ main { position: relative; z-index: 1; }
 .award-card--gold:hover { border-color: rgba(240,165,0,0.5); }
 .award-card--silver:hover { border-color: rgba(192,192,192,0.5); }
 .award-card--blue:hover { border-color: rgba(88,166,255,0.5); }
-.award-card__emoji { font-size: 2rem; }
+
+/* Media area — shows image or emoji */
+.award-card__media {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--bg3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.award-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.award-card:hover .award-card__img { transform: scale(1.04); }
+.award-card__emoji {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* Text body */
+.award-card__body {
+  padding: 1rem 1.1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
 .award-card__title {
   font-size: 0.85rem;
   font-weight: 700;
@@ -1481,13 +1546,26 @@ main { position: relative; z-index: 1; }
   font-size: 0.73rem;
   color: var(--muted);
   line-height: 1.5;
+  flex: 1;
+}
+.award-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.4rem;
 }
 .award-card__year {
   font-size: 0.7rem;
   font-weight: 700;
   color: var(--blue);
-  margin-top: auto;
 }
+.award-card__li {
+  font-size: 0.85rem;
+  color: #0a66c2;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.award-card:hover .award-card__li { opacity: 1; }
 
 @media (max-width: 1200px) { .awards__grid { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 900px) { .awards__grid { grid-template-columns: repeat(3, 1fr); } }
