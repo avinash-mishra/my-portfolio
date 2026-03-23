@@ -518,7 +518,7 @@ export default {
           title: 'BFSI Exceller Award 2025',
           desc: 'For building a Generative AI model in hybrid cloud architecture at State Bank of India.',
           year: '2025',
-          img: null,
+          img: require('./assets/awards/etbfsi-exceller-2025.jpg'),
           linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
@@ -527,7 +527,7 @@ export default {
           title: 'Oracle Certified GenAI Professional',
           desc: 'Official Oracle certification in Generative AI and large language model technologies.',
           year: '2024',
-          img: null,
+          img: require('./assets/awards/oracle-genai-badge.png'),
           linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/certifications/'
         },
         {
