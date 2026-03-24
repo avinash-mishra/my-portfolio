@@ -321,11 +321,11 @@ export default {
           period: 'Mar 2021 – Present',
           current: true,
           icon: 'fa-bank',
-          desc: 'Leading AI Centre of Excellence, transforming SBI\'s analytics department into an enterprise GenAI powerhouse serving India\'s 500M+ bank customers.',
+          desc: 'Leading AI Centre of Excellence, transforming SBI\'s analytics department into an enterprise GenAI powerhouse.',
           tags: ['GenAI', 'LLMs', 'RAG', 'Python', 'Azure', 'Kubernetes', 'LangChain'],
           highlights: [
             'askSBI GenAI Chatbot: 250K users · ETHR Award 2025 · BFSI Exceller Award 2025',
-            'CDNA-CLV: 360° customer persona engine for 500M+ customers · Patent pending for WCPPM algorithm',
+            'CDNA-CLV: 360° customer persona engine · Omnichannel hyper-personalization at enterprise scale',
             'Pre-approved Traders Loan: ML model targeting savings account holders with UPI patterns for SME lending',
             'Designed Responsible AI (R-AI) governance framework for LLMs in banking',
             'IIT-Bombay Technical Committee member for SBI DS Foundation Hub',
@@ -416,8 +416,8 @@ export default {
           emoji: '🧬',
           category: 'Hyper-Personalization',
           title: 'Customer-DNA & CLV Modeling',
-          desc: '360° customer persona engine for 500M+ customers and 24K+ branches. Powers omnichannel hyper-personalization. Patent pending for the internal WCPPM algorithm.',
-          impact: '₹81.9 Billion advances · 2.8% conversion · Patent initiated',
+          desc: '360° customer persona engine for 24K+ branches. Powers omnichannel hyper-personalization at enterprise scale using advanced clustering and RFM techniques.',
+          impact: '₹81.9 Billion advances · 2.8% conversion rate',
           tech: ['Python', 'XGBoost', 'Clustering', 'RFM', 'Spark', 'MLflow']
         },
         {
