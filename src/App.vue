@@ -288,7 +288,7 @@ export default {
       aboutFacts: [
         { icon: 'fa-map-marker', label: 'Location', value: 'Mumbai, India' },
         { icon: 'fa-briefcase', label: 'Current Role', value: 'Manager, Data Science @ SBI' },
-        { icon: 'fa-linkedin', label: 'LinkedIn', value: 'avinash-mishra-a0846360' },
+        { icon: 'fa-linkedin', label: 'LinkedIn', value: 'linkedin.com/in/avinash-mishra-a0846360', url: 'https://www.linkedin.com/in/avinash-mishra-a0846360/' },
         { icon: 'fa-globe', label: 'Languages', value: 'English · Hindi · Japanese (N4)' }
       ],
       highlights: [
@@ -325,8 +325,8 @@ export default {
           tags: ['GenAI', 'LLMs', 'RAG', 'Python', 'Azure', 'Kubernetes', 'LangChain'],
           highlights: [
             'askSBI GenAI Chatbot: 250K users · ETHR Award 2025 · BFSI Exceller Award 2025',
-            'CDNA-CLV: ₹81.9B advances · 2.8% conversion · Patent pending for WCPPM algorithm',
-            'Pre-approved Traders Loan: ₹5.42B disbursed FY23 · 21.3% conversion rate',
+            'CDNA-CLV: 360° customer persona engine for 500M+ customers · Patent pending for WCPPM algorithm',
+            'Pre-approved Traders Loan: ML model targeting savings account holders with UPI patterns for SME lending',
             'Designed Responsible AI (R-AI) governance framework for LLMs in banking',
             'IIT-Bombay Technical Committee member for SBI DS Foundation Hub',
             '15+ senior recognitions from DMDs, CGMs, GMs for AI/DS excellence'
@@ -706,6 +706,8 @@ export default {
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.about__fact-link { color: var(--blue); text-decoration: none; }
+.about__fact-link:hover { text-decoration: underline; }
 
 html { scroll-behavior: smooth; }
 
