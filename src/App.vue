@@ -42,13 +42,13 @@
           </div>
           <div class="hero__cta">
             <a href="#contact" class="btn btn--primary">Get In Touch</a>
-            <a href="assets/cv.pdf" download class="btn btn--ghost">Download CV</a>
+            <a href="https://github.com/avinash-mishra" target="_blank" class="btn btn--ghost">View GitHub</a>
           </div>
           <div class="hero__social">
             <a href="https://www.linkedin.com/in/avinash-mishra-a0846360/" target="_blank" class="social-btn" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
             <a href="https://github.com/avinash-mishra" target="_blank" class="social-btn" title="GitHub"><i class="fa fa-github"></i></a>
             <a href="https://stackoverflow.com/users/avinash_mishra" target="_blank" class="social-btn" title="StackOverflow"><i class="fa fa-stack-overflow"></i></a>
-            <a href="mailto:avinash.mishra.2388@gmail.com" class="social-btn" title="Email"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/avinash-mishra-a0846360/" target="_blank" class="social-btn" title="LinkedIn Profile"><i class="fa fa-id-badge"></i></a>
           </div>
         </div>
         <div class="hero__visual">
@@ -79,7 +79,11 @@
               <div class="about__facts">
                 <div class="about__fact" v-for="f in aboutFacts" :key="f.label">
                   <i :class="'fa ' + f.icon" class="about__fact-icon"></i>
-                  <div><strong>{{ f.value }}</strong><span>{{ f.label }}</span></div>
+                  <div>
+                    <strong v-if="f.url"><a :href="f.url" target="_blank" rel="noopener noreferrer" class="about__fact-link">{{ f.value }}</a></strong>
+                    <strong v-else>{{ f.value }}</strong>
+                    <span>{{ f.label }}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -247,21 +251,12 @@
           <h2 class="footer__heading">Let's Build Something <span class="text-gradient">Great Together</span></h2>
           <p class="footer__sub">Open for collaborations, AI consulting, and cutting-edge data science challenges</p>
           <div class="footer__links">
-            <a href="mailto:avinash.mishra.2388@gmail.com" class="footer__link">
-              <i class="fa fa-envelope"></i> avinash.mishra.2388@gmail.com
-            </a>
             <a href="https://www.linkedin.com/in/avinash-mishra-a0846360/" target="_blank" class="footer__link">
-              <i class="fa fa-linkedin"></i> LinkedIn
+              <i class="fa fa-linkedin"></i> Connect on LinkedIn
             </a>
             <a href="https://github.com/avinash-mishra" target="_blank" class="footer__link">
               <i class="fa fa-github"></i> GitHub
             </a>
-          </div>
-          <div class="footer__bottom">
-            <p>&copy; 2025 Avinash Mishra &nbsp;&middot;&nbsp;
-              <a href="assets/cv.pdf" download>Download CV</a> &nbsp;&middot;&nbsp;
-              Built with passion for AI
-            </p>
           </div>
         </div>
       </footer>
@@ -287,15 +282,13 @@ export default {
       ],
       roles: ['Manager · Data Scientist', 'GenAI & LLM Specialist', 'AI Agent Systems Architect'],
       heroStats: [
-        { val: '500M+', label: 'Customers Impacted' },
         { val: '17+', label: 'Team Members Led' },
-        { val: '12+', label: 'Years Experience' },
-        { val: '₹87B+', label: 'Business Value' }
+        { val: '12+', label: 'Years Experience' }
       ],
       aboutFacts: [
         { icon: 'fa-map-marker', label: 'Location', value: 'Mumbai, India' },
         { icon: 'fa-briefcase', label: 'Current Role', value: 'Manager, Data Science @ SBI' },
-        { icon: 'fa-envelope', label: 'Email', value: 'avinash.mishra.2388@gmail.com' },
+        { icon: 'fa-linkedin', label: 'LinkedIn', value: 'avinash-mishra-a0846360' },
         { icon: 'fa-globe', label: 'Languages', value: 'English · Hindi · Japanese (N4)' }
       ],
       highlights: [
@@ -518,7 +511,7 @@ export default {
           title: 'BFSI Exceller Award 2025',
           desc: 'For building a Generative AI model in hybrid cloud architecture at State Bank of India.',
           year: '2025',
-          img: require('./assets/awards/etbfsi-exceller-2025.jpg'),
+          img: null,
           linkedinUrl: 'https://www.linkedin.com/in/avinash-mishra-a0846360/details/honors/'
         },
         {
