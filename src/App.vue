@@ -32,7 +32,7 @@
           </div>
           <p class="hero__bio">
             Experienced AI leader building enterprise-scale GenAI products, RAG pipelines &amp; AI-Agent systems.
-            Leading a 17-member team at India's largest bank &mdash; impacting <strong>500M+ customers</strong>.
+            Leading a 17-member team at India's largest bank &mdash; driving enterprise AI transformation.
           </p>
           <div class="hero__stats">
             <div class="hero__stat" v-for="s in heroStats" :key="s.label">
@@ -59,7 +59,7 @@
             <img src="./assets/profile.jpeg" alt="Avinash Mishra" class="hero__photo">
           </div>
           <div class="hero__float hero__float--1"><i class="fa fa-trophy"></i> ETHR Award 2025</div>
-          <div class="hero__float hero__float--2"><i class="fa fa-star"></i> 500M+ Customers</div>
+          <div class="hero__float hero__float--2"><i class="fa fa-star"></i> BFSI Exceller 2025</div>
           <div class="hero__float hero__float--3"><i class="fa fa-certificate"></i> Oracle GenAI Certified</div>
         </div>
       </section>
@@ -73,7 +73,7 @@
           </div>
           <div class="about__grid">
             <div class="about__text">
-              <p>I'm a seasoned AI leader with <strong>12+ years</strong> of experience transforming data into enterprise intelligence. Currently managing the Analytics &amp; AI function at <strong>State Bank of India</strong> — India's largest bank serving 500M+ customers.</p>
+              <p>I'm a seasoned AI leader with <strong>12+ years</strong> of experience transforming data into enterprise intelligence. Currently managing the Analytics &amp; AI function at <strong>State Bank of India</strong> — India's largest public sector bank.</p>
               <p>My expertise spans GenAI product development, RAG pipelines, LLM-powered agent systems, and responsible AI governance. I've led AI initiatives generating billions in business value, pioneering enterprise chatbots, regulatory AI, and hyper-personalization engines.</p>
               <p>As founder of <strong>Data-Science-Trend</strong> and author of an open-source <em>Data Science Essentials</em> iPy-Book, I'm committed to democratizing AI knowledge globally.</p>
               <div class="about__facts">
@@ -300,7 +300,7 @@ export default {
         {
           emoji: '📊',
           title: 'Scale Expert',
-          desc: 'Delivered ML solutions impacting 500M+ customers with models generating ₹87B+ in measurable business value.'
+          desc: 'Delivered enterprise-scale ML solutions with models generating significant measurable business value across banking operations.'
         },
         {
           emoji: '🏛️',
@@ -355,7 +355,7 @@ export default {
           tags: ['Python', 'Spark', 'LightGBM', 'word2vec', 'Dash', 'Plotly', 'Scala'],
           highlights: [
             'Media Mix Tracker: OLS + LightGBM/NN blend with SHAP explanations for Mizkan & Suntory',
-            'Likely Buyer model: ~17% higher conversion rates for marketing campaigns',
+            'Likely Buyer model: Significant lift in campaign targeting accuracy for marketing campaigns',
             'Customer Segmentation: Automated pipeline for 90M monthly transactions',
             'New Product Launcher: ML forecaster + Dash dashboard for Suntory & Somi MFG',
             'Retail_AutoML: Industry-specific autoML platform for CPG regression & classification'
@@ -417,7 +417,7 @@ export default {
           category: 'Hyper-Personalization',
           title: 'Customer-DNA & CLV Modeling',
           desc: '360° customer persona engine for 24K+ branches. Powers omnichannel hyper-personalization at enterprise scale using advanced clustering and RFM techniques.',
-          impact: '₹81.9 Billion advances · 2.8% conversion rate',
+          impact: 'Enterprise-scale deployment · 24K+ branches served',
           tech: ['Python', 'XGBoost', 'Clustering', 'RFM', 'Spark', 'MLflow']
         },
         {
@@ -425,7 +425,7 @@ export default {
           category: 'Business Growth ML',
           title: 'Pre-approved Traders Loan',
           desc: 'ML product targeting savings account holders with UPI transactions to offer SME business loans. Uses Cross-Tab, RFM, clustering and RSM techniques for precision targeting.',
-          impact: '₹5.42 Billion INR disbursed FY23 · 21.3% conversion rate',
+          impact: 'Deployed in production FY23 · High-precision targeting for SME segment',
           tech: ['Python', 'Clustering', 'RFM', 'Cross-Tab', 'RSM', 'Spark']
         },
         {
