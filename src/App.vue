@@ -282,7 +282,8 @@ export default {
       ],
       roles: ['Manager · Data Scientist', 'GenAI & LLM Specialist', 'AI Agent Systems Architect'],
       heroStats: [
-        { val: '13+', label: 'Years Experience' }
+        { val: '17+', label: 'Team Members Led' },
+        { val: '12+', label: 'Years Experience' }
       ],
       aboutFacts: [
         { icon: 'fa-map-marker', label: 'Location', value: 'Mumbai, India' },
@@ -309,7 +310,7 @@ export default {
         {
           emoji: '🎯',
           title: 'Team Builder',
-          desc: 'Built and leads 17-member AI Centre of Excellence. Acquired ¥25M JPY budget to build AI team from scratch in Japan.'
+          desc: 'Acquired ¥25M JPY budget to build AI team from scratch in Japan.'
         }
       ],
       jobs: [
@@ -328,7 +329,7 @@ export default {
             'Pre-approved Traders Loan: ML model targeting savings account holders with UPI patterns for SME lending',
             'Designed Responsible AI (R-AI) governance framework for LLMs in banking',
             'IIT-Bombay Technical Committee member for SBI DS Foundation Hub',
-            '15+ senior recognitions from DMDs, CGMs, GMs for AI/DS excellence'
+            '21+ senior recognitions from DMDs, CGMs, GMs for AI/DS excellence'
           ]
         },
         {
@@ -579,7 +580,7 @@ export default {
         {
           emoji: '🌟',
           tier: 'gold',
-          title: '15+ SBI Senior Recognitions',
+          title: '21+ SBI Senior Recognitions',
           desc: 'Awards from 2 Deputy Managing Directors, 2 Chief General Managers, 1 GM, 3 DGMs, and 8 AGMs for AI/DS excellence.',
           year: '2021–2025',
           img: null,
