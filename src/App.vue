@@ -32,7 +32,7 @@
           </div>
           <p class="hero__bio">
             Experienced AI leader building enterprise-scale GenAI products, RAG pipelines &amp; AI-Agent systems.
-            Leading a 17-member team at India's largest bank &mdash; driving enterprise AI transformation.
+            &mdash; Driving enterprise AI transformation.
           </p>
           <div class="hero__stats">
             <div class="hero__stat" v-for="s in heroStats" :key="s.label">
@@ -73,7 +73,7 @@
           </div>
           <div class="about__grid">
             <div class="about__text">
-              <p>I'm a seasoned AI leader with <strong>12+ years</strong> of experience transforming data into enterprise intelligence. Currently managing the Analytics &amp; AI function at <strong>State Bank of India</strong> — India's largest public sector bank.</p>
+              <p>I'm a seasoned AI leader with <strong>13+ years</strong> of experience transforming data into enterprise intelligence. Currently managing the Analytics &amp; AI function at <strong>State Bank of India</strong> — India's largest public sector bank.</p>
               <p>My expertise spans GenAI product development, RAG pipelines, LLM-powered agent systems, and responsible AI governance. I've led AI initiatives generating billions in business value, pioneering enterprise chatbots, regulatory AI, and hyper-personalization engines.</p>
               <p>As founder of <strong>Data-Science-Trend</strong> and author of an open-source <em>Data Science Essentials</em> iPy-Book, I'm committed to democratizing AI knowledge globally.</p>
               <div class="about__facts">
@@ -282,8 +282,7 @@ export default {
       ],
       roles: ['Manager · Data Scientist', 'GenAI & LLM Specialist', 'AI Agent Systems Architect'],
       heroStats: [
-        { val: '17+', label: 'Team Members Led' },
-        { val: '12+', label: 'Years Experience' }
+        { val: '13+', label: 'Years Experience' }
       ],
       aboutFacts: [
         { icon: 'fa-map-marker', label: 'Location', value: 'Mumbai, India' },
